@@ -47,3 +47,18 @@ header {
 .logo:hover {
   transform: scale(1.2);
 }
+
+nav a {
+  font-size: 1.5rem;
+  margin-left: 10rem;
+  color: white;
+  font-weight: 800;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a:active {
+  color: #579cb9;
+  border-bottom: 4px solid #579bc9;
+}
