@@ -36,6 +36,7 @@ header {
   align-items: center;
 }
 
+/*Big logo name*/
 .logo {
   font-size: 4rem;
   color: #579bc9;
@@ -48,6 +49,7 @@ header {
   transform: scale(1.2);
 }
 
+/*Navigation bar and animation*/
 nav a {
   font-size: 1.5rem;
   margin-left: 10rem;
@@ -63,6 +65,7 @@ nav a:active {
   border-bottom: 4px solid #579bc9;
 }
 
+/*Layout for body text*/
 section {
   min-height: 100vh;
   padding: 5rem 9% 5rem;
@@ -86,6 +89,26 @@ section {
   font-size: 1.5rem;
 }
 
+/*Color for my name*/
 span {
   color: #579bc9;
+}
+
+/*Polaroid looking frame*/
+.home-img {
+  width: 50vw;
+  height: 30vw;
+  background-color: white;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.home-img img {
+  margin-left: 3.5%;
+  margin-top: 3.5%;
+  width: 18vw;
+  height: 25vw;
+  display: block;
+  border-radius: 2%;
 }
