@@ -35,3 +35,15 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
+.logo {
+  font-size: 4rem;
+  color: #579bc9;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
