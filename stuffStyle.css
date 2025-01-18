@@ -76,7 +76,7 @@ section {
   padding: 5rem 9% 5rem;
 }
 
-.home {
+.stuff {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,13 +84,13 @@ section {
   background-color: #9ccef0;
 }
 
-.home .home-content h1 {
+.stuff .stuff-content h1 {
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.3;
 }
 
-.home .home-content p {
+.stuff .stuff-content p {
   font-size: 1.5rem;
 }
 
@@ -99,21 +99,27 @@ span {
   color: #579bc9;
 }
 
-/*Polaroid looking frame*/
-.home-img {
+/*Images*/
+.stuff-img-shirt1,
+.stuff-img-shirt2 {
   width: 55vw;
-  height: 30vw;
-  background-color: white;
+  height: 32vw;
+  background-color: beige;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
   padding: 10px;
   border-radius: 5px;
+  margin-top: 12vw;
+}
+.stuff-img-shirt1 img {
+  width: 21vw;
+  height: 27vw;
+  display: block;
+  border-radius: 2%;
 }
 
-.home-img img {
-  margin-left: 5px;
-  margin-top: 10px;
+.stuff-img-shirt2 img {
   width: 21vw;
-  height: 25vw;
+  height: 27vw;
   display: block;
   border-radius: 2%;
 }
