@@ -9,7 +9,6 @@
   border: none;
   outline: none;
   font-family: "Poppins", "sans-serif";
-  list-style: none;
 }
 
 html {
@@ -26,10 +25,7 @@ body {
 
 header {
   margin-top: 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  width: 55%;
   padding: 1rem 9%;
   background-color: transparent;
   display: flex;
@@ -56,6 +52,15 @@ footer {
 }
 
 /*Navigation bar and animation*/
+nav ul {
+  display: flex;
+  gap: 5rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
 nav a {
   font-size: 1.5rem;
   color: white;
@@ -74,6 +79,7 @@ nav a:active {
 section {
   min-height: 100vh;
   padding: 5rem 9% 5rem;
+  margin-top: -25vh;
 }
 
 .contact {
