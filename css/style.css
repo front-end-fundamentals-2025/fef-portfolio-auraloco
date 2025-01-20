@@ -105,6 +105,27 @@ span {
   color: #579bc9;
 }
 
+/*Layout for Education and Skills section*/
+.info-sections {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8rem;
+  gap: 5rem;
+}
+
+.info-sections h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #579bc9;
+}
+
+.info-sections ul {
+  list-style: none;
+  line-height: 2.5;
+  font-size: 1.1rem;
+  color: beige;
+}
+
 /*Polaroid looking frame*/
 .home-img {
   width: 55vw;
@@ -116,8 +137,8 @@ span {
 }
 
 .home-img img {
-  margin-left: 5px;
-  margin-top: 10px;
+  margin-left: 2px;
+  margin-top: 5px;
   width: 21vw;
   height: 25vw;
   display: block;
