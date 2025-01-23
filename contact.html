@@ -9,9 +9,12 @@
   <body>
     <header>
       <a href="#" class="logo">Aura</a>
+      <!--Clickable logo-->
 
       <nav>
+        <!--Navigation bar-->
         <ul>
+          <!--List for the navigation menu-->
           <li><a href="index.html">About Me</a></li>
           <li><a href="stuff.html">Stuff</a></li>
           <li><a href="#contact" class="active">Contact Me</a></li>
@@ -19,42 +22,61 @@
       </nav>
     </header>
 
-    <section class="contact">
-      <div class="contact-content">
-        <h1>Get in <span>Touch</span></h1>
-        <p>Want to collaborate or just say hi? Feel free to reach out to me!</p>
-        <form class="contact-form">
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your Name"
-            required
-          />
-          <br />
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your Email"
-            required
-          />
-          <br />
-          <label for="message">Message:</label>
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <br />
-          <button type="submit">Send</button>
-        </form>
-      </div>
-    </section>
+    <main>
+      <section class="contact">
+        <!--Grouping content for the contact page -->
+        <div class="contact-content">
+          <!--Content for the info text-->
+          <h1>Get in <span>Touch</span></h1>
+          <!--Heading with "touch" styled differently using <span>-->
+          <p>
+            Want to collaborate or just say hi? Feel free to reach out to me!
+          </p>
+          <form class="contact-form">
+            <!--Content for the contact form-->
+            <label for="name">Name:</label>
+            <!--A label for the name field-->
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+            <!--Text input field for the name, using placeholder text-->
+            <br />
+            <!--Line break-->
+            <label for="email">Email:</label>
+            <!--Label for the email field-->
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <!--Text input field for the email, using placeholder text -->
+            <br />
+            <!--Linebreak-->
+            <label for="message">Message:</label>
+            <!--Text input field for the message-->
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <!--Textarea for people to write their message-->
+            <br />
+            <!--Linebreak-->
+            <button type="submit">Send</button>
+            <!--Send button-->
+          </form>
+        </div>
+      </section>
+    </main>
 
     <footer><p>© Aura 2025</p></footer>
+    <!--Footer section-->
   </body>
 </html>
