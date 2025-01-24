@@ -16,34 +16,49 @@
         <ul>
           <!--List of navigation items-->
           <li><a href="index.html">About Me</a></li>
-          <li><a href="#stuff" class="active">Stuff</a></li>
+          <li><a href="#work" class="active">My Work</a></li>
           <li><a href="contact.html">Contact Me</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="stuff">
-        <!--Grouping content-->
-        <div class="stuff-img-shirt1">
-          <img src="img/shirt1.jpg" alt="Itachi shirt" />
-          <!--First image-->
-        </div>
-        <div class="stuff-img-shirt2">
-          <img src="img/shirt2.jpg" alt="Choso hoodie" />
-          <!--Second image-->
-        </div>
-        <div class="stuff-content">
-          <!--Text content -->
-          <h1>Some <span>Stuff</span></h1>
-          <p>
-            I enjoy painting, mostly on clothes. I started selling custom
-            hoodies and t-shirts in 2020 and it's been slowly growing through
-            the years.
-          </p>
-          <!--paragraph section for the skills page-->
+      <section class="work">
+        <!--Text content -->
+        <h1>My <span>Work</span></h1>
+        <p>
+          I enjoy painting, mostly on clothes. I started selling custom hoodies
+          and t-shirts in 2020 and it's been slowly growing through the years.
+        </p>
+        <!--paragraph section for the skills page-->
+
+        <div class="gallery">
+          <a href="#item1" class="gallery-item">
+            <img src="img/shirt1.jpg" alt="Itachi shirt" />
+          </a>
+          <a href="#item2" class="gallery-item">
+            <img src="img/shirt2.jpg" alt="Choso Hoodie" />
+          </a>
         </div>
       </section>
+
+      <div id="item1" class="popup">
+        <div class="popup-content">
+          <h2>Itachi Shirt</h2>
+          <p>A custom painted Itachi shirt.</p>
+          <a href="#work" class="close">Close</a>
+        </div>
+      </div>
+
+      <div id="item2" class="popup">
+        <div class="popup-content">
+          <h2>Choso Hoodie</h2>
+          <p>
+            A custom made Choso Hoodie form the anime series Jujutsu Kaisen.
+          </p>
+          <a href="#work" class="close">Close</a>
+        </div>
+      </div>
     </main>
 
     <footer><p>© Aura 2025</p></footer>
