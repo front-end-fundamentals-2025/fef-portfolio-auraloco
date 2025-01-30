@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/stuffStyle.css" />
-    <title>Aura Coruña</title>
+    <title>Aura Coruña | My Work</title>
   </head>
   <body>
     <header>
       <a href="#" class="logo">Aura</a>
       <!--Clickable logo-->
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
 
       <nav>
         <!--Navigatoin menu-->
@@ -57,7 +62,15 @@
       <div id="item1" class="popup">
         <div class="popup-content">
           <h2>Itachi Shirt</h2>
-          <p>A custom painted Itachi shirt.</p>
+          <div class="image-container-itachi">
+            <img src="img/shirt1.jpg" alt="Itachi shirt back" />
+            <img src="img/itachi1.jpg" alt="Itachi shirt" />
+            <img src="img/itachi2.jpg" alt="Itachi shirt" />
+          </div>
+          <p>
+            A custom painted Itachi shirt based on the iconic scene of Itachi
+            and Sasukes fight.
+          </p>
           <a href="#work" class="close">Close</a>
         </div>
       </div>
@@ -65,6 +78,10 @@
       <div id="item2" class="popup">
         <div class="popup-content">
           <h2>Choso Hoodie</h2>
+          <div class="image-container">
+            <img src="img/shirt2.jpg" alt="Choso Hoodie" />
+            <img src="img/choso1.jpg" alt="Choso Hoodie" />
+          </div>
           <p>
             A custom made Choso Hoodie form the anime series Jujutsu Kaisen.
           </p>
@@ -75,6 +92,10 @@
       <div id="item3" class="popup">
         <div class="popup-content">
           <h2>Black Clover Hoodie</h2>
+          <div class="image-container">
+            <img src="img/shirt3.jpg" alt="Black Clover Hoodie" />
+            <img src="img/blackClover.jpg" alt="Black Clover Hoodie" />
+          </div>
           <p>
             A custom made Black Clover hoodie. The back is made of a patch for a
             visual satisfaction.
@@ -86,8 +107,11 @@
       <div id="item4" class="popup">
         <div class="popup-content">
           <h2>Stamp poster</h2>
+          <div class="image-container">
+            <img src="img/stamp.jpg" alt="Stamp poster" />
+          </div>
           <p>
-            A simple poster of a stamp about my home island, Gran Canaria. Thw
+            A simple poster of a stamp about my home island, Gran Canaria. The
             sun representing a common native symbol, the iland and the rock on
             the top representing Roque Nublo and the silhouette by the name that
             represents the "Idolo de Tara" a native sculpture.
@@ -99,6 +123,9 @@
       <div id="item5" class="popup">
         <div class="popup-content">
           <h2>Gradient Poster</h2>
+          <div class="image-container">
+            <img src="img/gradients.png" alt="Gradient Poster" />
+          </div>
           <p>
             A simple gradient poster. Testing out some gradients and shapes.
           </p>
@@ -109,5 +136,11 @@
 
     <footer><p>© Aura 2025</p></footer>
     <!--Footer section-->
+
+    <script>
+      document.querySelector(".hamburger").addEventListener("click", () => {
+        document.querySelector("nav ul").classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

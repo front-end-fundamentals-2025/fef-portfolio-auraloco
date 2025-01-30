@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1-0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Aura Coruña</title>
+    <title>Aura Coruña | About Me</title>
   </head>
   <!--Visible content of webpage-->
   <body>
@@ -12,6 +12,11 @@
       <!--Top section of page-->
       <a href="#" class="logo">Aura</a>
       <!--Clickable logo-->
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
 
       <nav>
         <!--Navigation menu-->
@@ -72,5 +77,11 @@
 
     <footer><p>© Aura 2025</p></footer>
     <!--Footer section-->
+
+    <script>
+      document.querySelector(".hamburger").addEventListener("click", () => {
+        document.querySelector("nav ul").classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
