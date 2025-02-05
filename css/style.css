@@ -152,7 +152,7 @@ span {
 
   nav ul {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
   }
@@ -164,11 +164,6 @@ span {
   contact {
     flex-direction: column;
     gap: 2rem;
-  }
-
-  .home-img {
-    width: 70vw;
-    height: 70vw;
   }
 
   .home-img img {

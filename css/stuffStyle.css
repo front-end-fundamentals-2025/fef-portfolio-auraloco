@@ -203,7 +203,7 @@ span {
   border-radius: 10px;
 }
 
-/*Choso hoodie popup*/
+/*Other popups*/
 .image-container {
   display: flex;
   gap: 1rem;
@@ -218,19 +218,33 @@ span {
 }
 
 @media (max-width: 768px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-    gap: 1rem;
-    position: absolute;
-    top: 80px;
-    right: 5%;
-    background-color: #9ccef0;
-    padding: 1rem;
-    border-radius: 10px;
+  header {
+    width: 90%;
+    padding: 1rem 5%;
   }
 
-  nav ul.active {
+  nav ul {
     display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  nav a {
+    font-size: 1rem;
+  }
+
+  .image-container-itachi {
+    display: grid;
+    gap: 0.1rem;
+  }
+
+  .image-container-itachi img {
+    width: 15vh;
+    height: 20vh;
+  }
+
+  .image-container img {
+    width: 20vh;
+    height: 25vh;
   }
 }
