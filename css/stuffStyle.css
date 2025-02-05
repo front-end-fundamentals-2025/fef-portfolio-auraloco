@@ -217,28 +217,7 @@ span {
   border-radius: 10px;
 }
 
-/* Hamburger Menu */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: beige;
-  transition: 0.3s ease;
-}
-
 @media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-
   nav ul {
     display: none;
     flex-direction: column;
