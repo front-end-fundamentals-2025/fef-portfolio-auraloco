@@ -114,8 +114,8 @@ span {
 
 /*Layout for Education and Skills section*/
 .info-sections {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-top: 8rem;
   gap: 5rem;
 }
