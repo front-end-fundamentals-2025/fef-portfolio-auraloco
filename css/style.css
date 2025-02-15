@@ -146,6 +146,43 @@ span {
   animation-timing-function: ease-in-out;
 }
 
+/*Dark theme*/
+.dark-theme {
+  background-color: #579bc9;
+  color: #9ccef0;
+}
+
+.dark-theme nav a {
+  color: #9ccef0;
+}
+
+.dark-theme .logo {
+  color: #9ccef0;
+}
+
+.dark-theme span {
+  color: #9ccef0;
+}
+
+#theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #579bc9;
+  color: beige;
+  font-size: 1.2rem;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background-color: #9ccef0;
+}
+
 /*Animation to the image*/
 @keyframes img-shake {
   25% {
