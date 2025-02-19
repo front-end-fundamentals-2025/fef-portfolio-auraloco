@@ -160,6 +160,11 @@ section {
   color: beige;
 }
 
+.dark-theme nav a:hover,
+nav a:active {
+  color: #9ccef0;
+}
+
 .dark-theme .logo {
   color: #9ccef0;
 }

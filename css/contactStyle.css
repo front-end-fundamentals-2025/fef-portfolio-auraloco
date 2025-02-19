@@ -144,6 +144,10 @@ section {
 }
 
 /*Dark theme*/
+.dark-theme {
+  background-color: #579bc9;
+}
+
 .dark-theme section {
   background-color: #579bc9;
 }
@@ -151,6 +155,11 @@ section {
 .dark-theme header {
   background-color: #579bc9;
   color: beige;
+}
+
+.dark-theme nav a:hover,
+nav a:active {
+  color: #9ccef0;
 }
 
 .dark-theme .logo {
