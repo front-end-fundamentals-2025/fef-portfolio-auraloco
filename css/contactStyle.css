@@ -146,6 +146,56 @@ span {
   background-color: #4678a5;
 }
 
+/*Dark theme*/
+.dark-theme section {
+  background-color: #579bc9;
+}
+
+.dark-theme header {
+  color: beige;
+}
+
+.dark-theme .logo {
+  color: #9ccef0;
+}
+
+.dark-theme span {
+  color: #9ccef0;
+}
+
+.dark-theme footer {
+  background-color: #579bc9;
+}
+
+.dark-theme .popup-content {
+  background-color: #579bc9;
+  color: beige;
+}
+
+.dark-theme .popup-content a.close {
+  background-color: beige;
+  color: #579bc9;
+}
+
+#theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #579bc9;
+  color: beige;
+  font-size: 1.2rem;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background-color: #9ccef0;
+}
+
 @media (max-width: 768px) {
   header {
     width: 90%;

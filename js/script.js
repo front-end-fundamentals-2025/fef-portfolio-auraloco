@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //Dynamic theme toggle
 document.addEventListener("DOMContentLoaded", function () {
-  const themeToggle = documet.getElementById("theme-toggle");
+  const themeToggle = document.getElementById("theme-toggle");
 
   //Check if user haves a preferred theme in localStorage
   const savedTheme = localStorage.getItem("theme");

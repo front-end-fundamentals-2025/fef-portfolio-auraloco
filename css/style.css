@@ -147,13 +147,17 @@ span {
 }
 
 /*Dark theme*/
+.dark-theme .home {
+  background-color: #579bc9;
+  color: beige;
+}
+
 .dark-theme {
   background-color: #579bc9;
-  color: #9ccef0;
 }
 
 .dark-theme nav a {
-  color: #9ccef0;
+  color: beige;
 }
 
 .dark-theme .logo {
@@ -162,6 +166,14 @@ span {
 
 .dark-theme span {
   color: #9ccef0;
+}
+
+.dark-theme .info-sections h2 {
+  color: #9ccef0;
+}
+
+.dark-theme footer {
+  background-color: #579bc9;
 }
 
 #theme-toggle {
