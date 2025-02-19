@@ -1,27 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const galleryItems = document.querySelectorAll(".gallery-item");
-  const popups = document.querySelectorAll(".popup");
-  const closeButtons = document.querySelectorAll(".close");
-
-  //Open popup when a gallery item is clicked
-  galleryItems.forEach((item, index) => {
-    item.addEventListener("click", (e) => {
-      e.preventDefault();
-      popups[index].style.opacity = "1";
-      popups[index].style.pointerEvents = "auto";
-    });
-  });
-
-  //Close popup when the close button is clicked
-  closeButtons.forEach((button, index) => {
-    button.addEventListener("click", (e) => {
-      e.preventDefault();
-      popups[index].style.opacity = "0";
-      popups[index].style.pointerEvents = "none";
-    });
-  });
-});
-
 //Dynamic theme toggle
 document.addEventListener("DOMContentLoaded", function () {
   const themeToggle = document.getElementById("theme-toggle");
@@ -51,4 +27,22 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateToggleButton(theme) {
     themeToggle.textContent = theme === "dark-theme" ? "☀️" : "🌙";
   }
+});
+
+//Typewriter effect in introduction
+document.addEventListener("DOMContentLoaded", function () {
+  const typewriterText = "Hi! It's Aura";
+  const typewriterElement = document.getElementById("typewriter");
+  let index = 0;
+
+  function typeWriter() {
+    if (index < typewriterText.length) {
+      typewriterElement.textContent += typewriterText.charAt(index);
+      index++;
+      setTimeout(typeWriter, 100);
+    }
+  }
+
+  typewriterElement.textContent = "";
+  typeWriter();
 });

@@ -101,15 +101,11 @@ section {
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.3;
+  color: #579bc9;
 }
 
 .home .home-content p {
   font-size: 1.5rem;
-}
-
-/*Color for my name*/
-span {
-  color: #579bc9;
 }
 
 /*Layout for Education and Skills section*/
@@ -150,6 +146,10 @@ span {
 .dark-theme .home {
   background-color: #579bc9;
   color: beige;
+}
+
+.dark-theme .home .home-content h1 {
+  color: #9ccef0;
 }
 
 .dark-theme {
@@ -193,6 +193,24 @@ span {
 
 #theme-toggle:hover {
   background-color: #9ccef0;
+}
+
+/*Typewriter animation*/
+#typewriter::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
 /*Animation to the image*/
