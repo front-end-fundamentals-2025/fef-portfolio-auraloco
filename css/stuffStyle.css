@@ -101,16 +101,12 @@ section {
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.3;
+  color: #579bc9;
 }
 
 .work p {
   font-size: 1.5rem;
   text-align: center;
-}
-
-/*Color for my name*/
-span {
-  color: #579bc9;
 }
 
 /*Images*/
@@ -127,6 +123,7 @@ span {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+  animation: zoom 2s ease-in-out;
 }
 
 .gallery-item img:hover {
@@ -226,11 +223,11 @@ span {
   color: beige;
 }
 
-.dark-theme .logo {
+.dark-theme .work h1 {
   color: #9ccef0;
 }
 
-.dark-theme span {
+.dark-theme .logo {
   color: #9ccef0;
 }
 
@@ -265,6 +262,17 @@ span {
 
 #theme-toggle:hover {
   background-color: #9ccef0;
+}
+
+@keyframes zoom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 @media (max-width: 768px) {

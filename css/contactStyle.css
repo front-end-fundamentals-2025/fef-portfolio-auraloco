@@ -97,15 +97,12 @@ section {
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.3;
+  color: #579bc9;
+  animation: jump 1s ease-in-out;
 }
 
 .contact .contact-content p {
   font-size: 1.5rem;
-}
-
-/*Color for the "Touch"*/
-span {
-  color: #579bc9;
 }
 
 /*contact form*/
@@ -160,7 +157,7 @@ span {
   color: #9ccef0;
 }
 
-.dark-theme span {
+.dark-theme .contact .contact-content h1 {
   color: #9ccef0;
 }
 
@@ -195,6 +192,17 @@ span {
 
 #theme-toggle:hover {
   background-color: #9ccef0;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 @media (max-width: 768px) {
