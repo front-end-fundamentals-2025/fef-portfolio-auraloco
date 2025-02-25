@@ -177,18 +177,19 @@ nav a:active {
   background-color: #579bc9;
 }
 
+/*Dark mode button*/
 #theme-toggle {
   position: fixed;
   bottom: 20px;
   right: 20px;
   padding: 10px;
-  border-radius: 50%;
+  border-radius: 50%; 
   border: none;
   cursor: pointer;
   background-color: #579bc9;
   color: beige;
   font-size: 1.2rem;
-  z-index: 1000;
+  z-index: 1000; /*Ensures button appears infront of everything else*/
   transition: background-color 0.3s ease;
 }
 
@@ -198,10 +199,11 @@ nav a:active {
 
 /*Typewriter animation*/
 #typewriter::after {
-  content: "|";
+  content: "|"; /*Cursor effect*/
   animation: blink 0.7s infinite;
 }
 
+/*Animation for the cursor typewriter*/
 @keyframes blink {
   0%,
   50% {
